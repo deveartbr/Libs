@@ -1,7 +1,7 @@
 //adicionar os parametros data-id e data-class em cada btn
 $(function(){
   // Ativar função de carregar mais galerias
-  $(".carregar_mais").click(function(e){
+  $(".show-more-btn").click(function(e){
     e.preventDefault();
     var qnt = $(this).data("qnt");
     if (qnt == undefined ) {
