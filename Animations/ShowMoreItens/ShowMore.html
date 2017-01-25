@@ -7,6 +7,23 @@
 .hidden-a{display: none !important;}
 .hidden-b{display: none !important;}
 .hidden-c{display: none !important;}
+  
+  
+.show-more{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+ .show-more .show-more-btn{
+  background: none;
+  border: none;
+  padding:5px 10px;
+}
+.show-more .show-more-btn:after{
+  font-family: FontAwesome;
+  content: "\f107";
+  padding-left: 5px;
+}
 
 </style>
 </head>
@@ -19,8 +36,9 @@
 <div class="hidden-a"> </div>
 <div class="hidden-a"> </div>
 <div class="hidden-a"> </div>
-<button class="carregar_mais btn" id="carregar_mais"  data-id="carregar_mais" data-qtd="3" data-class="hidden-a">Carregar Mais</button>
-
+<div class="show-more">
+  <button class="show-more-btn btn" id="show-more-btn"  data-id="show-more-btn" data-qtd="3" data-class="hidden-a">Show more items</button>
+  </div>
 </body>
 
 </html>
